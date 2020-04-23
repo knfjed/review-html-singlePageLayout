@@ -6,6 +6,7 @@ body {
   margin-top: 50px;
   display: inline-flex;
   justify-content: center;
+  border-bottom: solid 1px black;
 }
 
 /* -----------------TOP-------------------- */
@@ -16,22 +17,26 @@ body {
   display: flex;
   flex-direction: column;
   flex-flow: column wrap;
-  background-color: black;
+  background-image: url(image/tokyo.jpg);
 }
 
 .top > h1 {
   font-size: 50px;
   display: inline-flex;
   justify-content: center;
+  opacity: 0.8;
 }
 
-.top > link {
-  color: white;
+.top button {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   font-size: 14px;
-  display: inline-flex;
+  width: max-content;
+  border-radius: 5%;
 }
 
-.top link:visited {
+.top button:visited {
   color: white;
   text-decoration: none;
 }
@@ -58,7 +63,8 @@ body {
   width: 100%;
   flex-direction: column;
   color: white;
-  background-color: black;
+  background-image: url(image/tokyo.jpg);
+  background-position: center;
   height: 500px;
 }
 
@@ -66,6 +72,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-flow: row no-wrap;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .works-image img {
@@ -83,15 +90,33 @@ body {
 .myskills {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  flex-wrap: wrap;
   margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.myskills > img {
-  width: 50px;
-  height: auto;
-
+.myskill {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.myskills figure {
+  width: 300px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.myskill img {
+  width: 15%;
+  /* margin: 50px; */
+}
+
+.myskills figcaption {
+  font-size: 12px;
 }
 
 /* -----------------CONTACT-------------------- */
@@ -117,4 +142,24 @@ body {
 /* -----------------FOOTER-------------------- */
 footer {
   text-align: center;
+  color: white;
+  background-color: black;
+  background-image: url(image/tokyo.jpg);
+  background-position: right bottom;
+  text-decoration: none;
+  margin: 0;
+  height: 200px;
+}
+
+footer p {
+  padding-top: 50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
+  text-decoration: none;
 }
