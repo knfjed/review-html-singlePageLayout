@@ -1,12 +1,16 @@
 body {
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8) url("image/tokyo.jpg") no-repeat fixed
+    left bottom;
+  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
+
 .subtitle {
   font-size: 40px;
   margin-top: 50px;
   display: inline-flex;
   justify-content: center;
-  border-bottom: solid 1px black;
 }
 
 /* -----------------TOP-------------------- */
@@ -15,45 +19,67 @@ body {
   height: 300px;
   color: white;
   display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  background-image: url(image/tokyo.jpg);
+  flex-flow: column;
+  opacity: 0.8;
 }
 
 .top > h1 {
   font-size: 50px;
   display: inline-flex;
   justify-content: center;
-  opacity: 0.8;
 }
 
-.top button {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.top .site-discription {
+  margin-bottom: 50px;
+  color: white
   font-size: 14px;
-  width: max-content;
-  border-radius: 5%;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.top button:visited {
+.button-wrap {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5%;
+  padding: 10px 12px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.top .button:visited {
   color: white;
   text-decoration: none;
 }
 
 /* -----------------ABOUT ME-------------------- */
 
-.about-me {
+#about-me {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  background-color: white;
+  opacity: 0.8;
 }
 
-.about-me p {
+#about-me h2 {
+  color: black;
+}
+
+#about-me p {
   font-size: 16px;
   line-height: 30px;
   display: inline-flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* -----------------WORKS-------------------- */
@@ -63,16 +89,13 @@ body {
   width: 100%;
   flex-direction: column;
   color: white;
-  background-image: url(image/tokyo.jpg);
-  background-position: center;
-  height: 500px;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .works-image {
   display: flex;
   flex-direction: row;
   flex-flow: row no-wrap;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 .works-image img {
@@ -90,21 +113,28 @@ body {
 .myskills {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .myskill {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-items: baseline;
+  /* width: 65%; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .myskills figure {
+  display: inline-block;
   width: 300px;
   text-align: center;
   margin: 0 0 50px 0;
@@ -119,6 +149,15 @@ body {
   font-size: 12px;
 }
 
+.skill {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* -----------------CONTACT-------------------- */
 .contact {
   display: flex;
@@ -127,25 +166,33 @@ body {
   margin-bottom: 100px;
 }
 
-.contact > form {
-  display: inline-flex;
-  flex-direction: column;
+.contact h2 {
+  color: white;
 }
 
-.contact > form {
-  width: 100%;
-  display: inline-flex;
-  flex-direction: row;
+.contacticon-wrapper {
+  display: flex;
+  flex-flow: row;
   justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.icon a img {
+  color: white;
+  fill: white;
 }
 
 /* -----------------FOOTER-------------------- */
 footer {
   text-align: center;
   color: white;
-  background-color: black;
-  background-image: url(image/tokyo.jpg);
-  background-position: right bottom;
   text-decoration: none;
   margin: 0;
   height: 200px;

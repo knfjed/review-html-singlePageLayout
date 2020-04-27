@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+
+    /* -----------------TOP-------------------- */
     <section class="top">
       <h1>HI,MY NAME IS KAFU.</h1>
-      <button href="http://twitter.com">LARN MORE</button>
-      <button href="#">SEND MESSAGE</button>
+      <p class="site-discription">Check out some of my works.</p>
+      <div class="button-wrap">
+        <a class="button" href="#about-me">LARN MORE</a>
+        <a class="button" href="#contact">CONTACT</a>
+      </div>
     </section>
 
-    <section class="about-me">
+    /* -----------------ABOUT ME-------------------- */
+    <section id="about-me">
       <h2 class="subtitle">ABOUT ME</h2>
       <p>
         はじめまして。日本でWebフロントエンドエンジニアを目指して勉強しています。
@@ -26,6 +36,7 @@
       </p>
     </section>
 
+    /* -----------------WORKS-------------------- */
     <section class="works">
       <h2 class="subtitle">WORKS</h2>
       <div class="works-image">
@@ -36,16 +47,22 @@
       </div>
     </section>
 
+    /* -----------------SKILLS-------------------- */
     <section class="myskills">
       <h2 class="subtitle">MY SKILLS</h2>
       <div class="myskill">
-        <figure>
-          <img src="image/icon/idea.png" />
-          <figcaption>柔軟な発想</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/collaboration.png" />
-          <figcaption>チーム開発</figcaption>
+        <div class="skill">
+            <figure>
+              <img src="image/icon/idea.png" />
+              <figcaption>柔軟な発想</figcaption>
+            </figure>
+            <figure>
+              <img src="image/icon/collaboration.png" />
+              <figcaption>チーム開発</figcaption>
+            </figure>
+        </div>
+
+        <div class="skill">
         </figure>
         <figure>
           <img src="image/icon/html5.png" />
@@ -55,43 +72,57 @@
           <img src="image/icon/css.png" />
           <figcaption>CSS3</figcaption>
         </figure>
-        <figure>
-          <img src="image/icon/js.png" />
-          <figcaption>javaScript</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/nodejs.png" />
-          <figcaption>node.js</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/react.png" />
-          <figcaption>React.js</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/ai.png" />
-          <figcaption>Adobe illutorator</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/photoshop.png" />
-          <figcaption>Adobe Photoshop</figcaption>
-        </figure>
-        <figure>
-          <img src="image/icon/indesign.png" />
-          <figcaption>Adobe indesign</figcaption>
-        </figure>
+        </div>
+
+        <div class="skill">
+          <figure>
+            <img src="image/icon/js.png" />
+            <figcaption>javaScript</figcaption>
+          </figure>
+          <figure>
+            <img src="image/icon/nodejs.png" />
+            <figcaption>node.js</figcaption>
+          </figure>
+          <figure>
+            <img src="image/icon/react.png" />
+            <figcaption>React.js</figcaption>
+          </figure>
+        </div>
+
+        <div class="skill">
+          <figure>
+            <img src="image/icon/ai.png" />
+            <figcaption>Adobe illutorator</figcaption>
+          </figure>
+          <figure>
+            <img src="image/icon/photoshop.png" />
+            <figcaption>Adobe Photoshop</figcaption>
+          </figure>
+          <figure>
+            <img src="image/icon/indesign.png" />
+            <figcaption>Adobe indesign</figcaption>
+          </figure>
+        </div>
+
+        </div>
+    </section>
+
+    /* -----------------CONTACT-------------------- */
+    <section class="contact">
+      <h2 class="subtitle">CONTACT</h2>
+      <div class="contacticon-wrapper">
+        <a class="icon" href="http://twitter.com"
+          ><img src="image/icon/twitter.svg"><img
+        ></a>
+        <a class="icon" href="mailto:knfjed@gmail.com"
+          ><img src="image/icon/mail.svg"></img
+        ></a>
       </div>
     </section>
 
-    <section class="contact">
-      <h2 class="subtitle">CONTACT</h2>
-      <form>
-        <input type="text" />
-        <button type="submit">submit</button>
-      </form>
-    </section>
-
+    /* -----------------FOOTER-------------------- */
     <footer>
-      <p>copylight Kana Fujieda.</p>
+      <p>copylight KAFU.</p>
       <p>
         Icons made by
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
